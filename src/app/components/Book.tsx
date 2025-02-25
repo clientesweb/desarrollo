@@ -3,13 +3,13 @@ import { FaRegHeart } from "react-icons/fa"
 
 const Book = () => {
   return (
-    <main className="px-[5%] py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-6" id="about">
+    <main className="px-[5%] py-20 grid grid-cols-1 lg:grid-cols-2 items-start gap-6" id="about">
       <section className="grid grid-cols-1 gap-4">
-        <p className="text-[16px] text-primary font-bold text-center md:text-left special-font" data-aos="fade-down">
+        <p className="text-[16px] text-primary font-bold text-center lg:text-left special-font" data-aos="fade-down">
           Simple y Eficiente
         </p>
         <h1
-          className="text-accent text-3xl md:text-5xl text-center md:text-left font-extrabold w-full md:max-w-[500px]"
+          className="text-accent text-3xl md:text-5xl text-center lg:text-left font-extrabold w-full md:max-w-[500px]"
           data-aos="fade-down"
         >
           Nuestro Proceso de Desarrollo en 3 Pasos
@@ -58,13 +58,19 @@ const Book = () => {
         </div>
       </section>
 
-      <section className="relative mt-20 md-mt-0 special-font">
+      <section className="relative mt-20 lg:mt-0 special-font">
         <div
-          className="p-4 rounded-2xl shadow-md w-[90%] md:max-w-[70%] grid grid-cols-1 gap-4 relative z-10 bg-background-light border border-primary/20"
+          className="p-4 rounded-2xl shadow-md w-full lg:max-w-[90%] grid grid-cols-1 gap-4 relative z-10 bg-background-light border border-primary/20"
           data-aos="zoom-in"
         >
-          <div className="w-full">
-            <Image src="/img/trip.jpg" width={300} height={300} alt="img" className="w-full" />
+          <div className="w-full h-[300px] md:h-[600px] lg:h-[1080px]">
+            <Image
+              src="/img/cerettiecommerce.png"
+              width={1080}
+              height={1080}
+              alt="Panel de Proyecto"
+              className="w-full h-full object-cover rounded-t-2xl"
+            />
           </div>
 
           <div className="grid gap-2 relative bg-background-light w-full">
@@ -96,7 +102,7 @@ const Book = () => {
             </div>
 
             <div
-              className="p-4 rounded-2xl shadow-md max-w-[500px] absolute right-[-60px] bottom-6 bg-background border border-primary/20"
+              className="p-4 rounded-2xl shadow-md max-w-[500px] absolute right-[-20px] bottom-6 bg-background border border-primary/20"
               data-aos="slide-right"
             >
               <div className="flex items-start justify-start gap-2">
