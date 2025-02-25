@@ -1,19 +1,23 @@
 "use client"
 
+import type React from "react"
+
 import { useEffect, useRef } from "react"
-import Image from "next/image"
+import { Aperture, Cpu, Database, Globe, Layers, Shield } from "lucide-react"
 
 const Sponsors = () => {
-  interface SponsorsLogo {
-    img: string
+  interface SponsorLogo {
+    icon: React.ElementType
+    name: string
   }
 
-  const sponsorsLogo: SponsorsLogo[] = [
-    { img: "/img/axon.png" },
-    { img: "/img/jetstar.png" },
-    { img: "/img/expedia.png" },
-    { img: "/img/qantas.png" },
-    { img: "/img/alitalia.png" },
+  const sponsorsLogo: SponsorLogo[] = [
+    { icon: Aperture, name: "TechVision" },
+    { icon: Cpu, name: "CoreSystems" },
+    { icon: Database, name: "DataSphere" },
+    { icon: Globe, name: "WebWorks" },
+    { icon: Layers, name: "StackInnovate" },
+    { icon: Shield, name: "SecureNet" },
   ]
 
   const trackRef = useRef<HTMLDivElement>(null)
@@ -73,16 +77,13 @@ const Sponsors = () => {
           {sponsorsLogo.map((sponsor, index) => (
             <div
               key={`original-${index}`}
-              className="inline-block p-4 mx-8 bg-background-light rounded-xl border border-primary/10 shadow-sm"
+              className="inline-block p-6 mx-8 bg-background-light rounded-xl border border-primary/10 shadow-sm"
               data-aos="zoom-in"
             >
-              <Image
-                src={sponsor.img || "/placeholder.svg"}
-                width={120}
-                height={80}
-                alt="Sponsor logo"
-                className="h-[60px] w-auto object-contain"
-              />
+              <div className="flex flex-col items-center justify-center">
+                <sponsor.icon className="w-16 h-16 text-primary" />
+                <span className="mt-2 text-sm font-medium text-accent">{sponsor.name}</span>
+              </div>
             </div>
           ))}
         </div>
