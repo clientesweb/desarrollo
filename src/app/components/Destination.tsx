@@ -62,9 +62,9 @@ const Destination = () => {
       <div className="relative w-full mt-8">
         <div className="flex overflow-x-auto pb-8 gap-6 snap-x snap-mandatory hide-scrollbar" data-aos="fade-up">
           {destination.map((destinations, index) => (
-            <div className="relative flex-shrink-0 w-[280px] md:w-[320px] snap-start" key={index}>
+            <div className="relative flex-shrink-0 w-[300px] md:w-[1080px] snap-start" key={index}>
               <div className="relative z-10 h-full flex flex-col rounded-2xl shadow-sm overflow-hidden">
-                <div className="h-[320px] w-[320px]">
+                <div className="h-[300px] md:h-[1080px] w-full">
                   <Image
                     src={destinations.img || "/placeholder.svg"}
                     width={1080}
