@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex justify-between flex-wrap gap-2">
           <div className="flex flex-col gap-2 mb-5 md:mb-0 w-full md:w-auto items-center md:items-start justify-center md:justify-start">
             <Image
-              src="/img/logo-duality-domain-1.png"
+              src="/img/duality-domain-1.png"
               width={150}
               height={100}
               alt="Duality Domain Logo"
