@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <main className="relative w-full flex flex-col md:flex-row items-center justify-between py-[80px] md:py-[100px] px-[5%] bg bg-right-top bg-no-repeat bg-contain">
-      <section className="w-full md:w-[50%] flex flex-col items-center md:items-start justify-center md:justify-start gap-3">
+      <section className="w-full md:w-[50%] flex flex-col items-center md:items-start justify-center md:justify-start gap-3 relative z-10">
         <p className="text-[14px] text-primary font-bold special-font" data-aos="fade-down">
           LAS MEJORES SOLUCIONES PARA TU NEGOCIO
         </p>
@@ -22,11 +22,11 @@ const Hero = () => {
           <span className="relative w-full px-1">
             <span className="relative z-10 w-full gradient-text">innova</span>
             <Image
-              src="/img/Decore.png"
-              width={100}
-              height={100}
+              src="/img/line-decore.png"
+              width={200}
+              height={20}
               alt="line-decore"
-              className="absolute bottom-2 right-0 w-full"
+              className="absolute bottom-0 left-0 w-full h-3 object-cover"
               loading="eager"
             />
           </span>
@@ -51,7 +51,7 @@ const Hero = () => {
             onClick={() => setIsVideoModalOpen(true)}
             className="py-3 px-5 rounded-md text-accent text-[14px] font-bold flex items-center gap-2 hover:shadow-md hover:bg-background-light transition-colors duration-300"
           >
-            <IoIosPlay className="text-2xl text-white p-[7px] rounded-full bg-primary" /> Ver Demo
+            <IoIosPlay className="text-2xl text-white p-[7px] rounded-full bg-primary" /> Reproduce
           </button>
         </div>
       </section>
@@ -62,7 +62,7 @@ const Hero = () => {
           width={500}
           height={500}
           alt="heroimg"
-          className="dangling-picture"
+          className="dangling-picture relative z-0"
           loading="eager"
         />
       </section>
