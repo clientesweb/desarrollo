@@ -18,23 +18,23 @@ const Testimonials = () => {
     {
       img: "/img/user1.png",
       review:
-        '"Duality Domain transformed our business with their innovative solutions. Their team\'s expertise and dedication exceeded our expectations at every stage."',
-      name: "Mike Taylor",
+        "Duality Domain transformó nuestro negocio con sus soluciones innovadoras. La experiencia de su equipo y su dedicación superaron nuestras expectativas en cada etapa.",
+      name: "Miguel Torres",
       company: "CTO, TechVision Inc.",
     },
     {
       img: "/img/user2.png",
       review:
-        '"Working with Duality Domain was a game-changer for our company. Their technical knowledge and attention to detail delivered exceptional results."',
-      name: "Chris Thomas",
-      company: "CEO of Red Button",
+        "Trabajar con Duality Domain fue un cambio radical para nuestra empresa. Su conocimiento técnico y atención al detalle entregaron resultados excepcionales.",
+      name: "Carlos Tomás",
+      company: "CEO de Red Button",
     },
     {
       img: "/img/user3.png",
       review:
-        '"The customer support is outstanding. They were responsive, professional, and helped us navigate complex technical challenges with ease."',
-      name: "John Smith",
-      company: "CEO of Energize Your Life Co",
+        "El soporte al cliente es sobresaliente. Fueron receptivos, profesionales y nos ayudaron a navegar por desafíos técnicos complejos con facilidad.",
+      name: "Juan Sánchez",
+      company: "CEO de Energize Your Life Co",
     },
   ]
 
@@ -71,13 +71,13 @@ const Testimonials = () => {
           className="text-[18px] text-primary font-semibold special-font text-center md:text-left"
           data-aos="fade-down"
         >
-          Testimonials
+          Testimonios
         </p>
         <h1
           className="text-3xl md:text-5xl font-extrabold w-full md:max-w-[70%] text-center md:text-left text-accent"
           data-aos="fade-down"
         >
-          What Our Clients Say About Us.
+          Lo Que Dicen Nuestros Clientes.
         </h1>
 
         <div className="flex items-center gap-2 justify-center md:justify-start" data-aos="slide-right">
