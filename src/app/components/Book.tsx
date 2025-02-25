@@ -66,9 +66,9 @@ const Book = () => {
           </div>
 
           <div className="grid gap-2 relative bg-background-light w-full p-4">
-            <h2 className="text-accent text-[18px] font-bold">Panel de Proyecto</h2>
+            <h2 className="text-accent text-[18px] font-bold">Panel de</h2>
             <div className="flex items-center gap-2 text-[16px] text-muted">
-              <p>Actualizaciones en tiempo real</p>
+              <p>Proyectos actualizaciones en tiempo real</p>
               <p className="text-[#00BEC1]">por Duality Domain</p>
             </div>
 
@@ -111,7 +111,7 @@ const Book = () => {
                     </p>
 
                     <div className="h-[6px] bg-background w-full rounded-2xl mt-1">
-                      <div className="bg-primary h-[6px] rounded-2xl w-[75%]"></div>
+                      <div className="bg-primary h-[6px] rounded-2xl w-[58%]"></div>
                     </div>
                   </div>
                 </div>
