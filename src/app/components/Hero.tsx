@@ -22,7 +22,7 @@ const Hero = () => {
           <span className="relative w-full px-1">
             <span className="relative z-10 w-full gradient-text">innova</span>
             <Image
-              src="/img/line-decore.png"
+              src="/img/Decore.png"
               width={100}
               height={100}
               alt="line-decore"
