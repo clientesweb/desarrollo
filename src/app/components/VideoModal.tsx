@@ -16,7 +16,7 @@ const VideoModal = ({ isOpen, onClose }: VideoModalProps) => {
             className="absolute top-0 left-0 w-full h-full rounded-lg"
             controls
             autoPlay
-            src="/video/marketing.mp4"
+            src="/video/duality-domain-presentacion.mp4"
           >
             Tu navegador no soporta el elemento de video.
           </video>
