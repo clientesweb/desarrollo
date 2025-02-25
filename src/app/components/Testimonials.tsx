@@ -71,13 +71,13 @@ const Testimonials = () => {
           className="text-[18px] text-primary font-semibold special-font text-center md:text-left"
           data-aos="fade-down"
         >
-          Testimonios
+          RESEÑAS
         </p>
         <h1
           className="text-3xl md:text-5xl font-extrabold w-full md:max-w-[70%] text-center md:text-left text-accent"
           data-aos="fade-down"
         >
-          Lo Que Dicen Nuestros Clientes.
+          De algunos clientes
         </h1>
 
         <div className="flex items-center gap-2 justify-center md:justify-start" data-aos="slide-right">
