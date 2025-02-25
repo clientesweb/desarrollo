@@ -1,61 +1,53 @@
 import Image from "next/image"
 import { FaRegHeart } from "react-icons/fa"
+import { Search, Code, Rocket, Building2, Map, Send } from "lucide-react"
 
 const Book = () => {
+  const steps = [
+    {
+      icon: Search,
+      title: "Descubrimiento y Planificación",
+      description: "Analizamos tus requisitos y creamos una hoja de ruta detallada para el éxito de tu proyecto.",
+    },
+    {
+      icon: Code,
+      title: "Desarrollo y Pruebas",
+      description: "Nuestro equipo de expertos construye tu solución con un riguroso control de calidad en cada etapa.",
+    },
+    {
+      icon: Rocket,
+      title: "Implementación y Soporte",
+      description:
+        "Lanzamos tu proyecto y proporcionamos mantenimiento continuo para garantizar un rendimiento óptimo.",
+    },
+  ]
+
   return (
     <main className="px-[5%] py-20 grid grid-cols-1 lg:grid-cols-2 items-start gap-6" id="about">
-      <section className="grid grid-cols-1 gap-4">
-        <p className="text-[16px] text-primary font-bold text-center lg:text-left special-font" data-aos="fade-down">
-          Simple y Eficiente
-        </p>
-        <h1
-          className="text-accent text-3xl md:text-5xl text-center lg:text-left font-extrabold w-full md:max-w-[500px]"
-          data-aos="fade-down"
-        >
-          Nuestro Proceso de Desarrollo en 3 Pasos
-        </h1>
-
-        <div className="flex items-center gap-2 special-font">
-          <div>
-            <Image src="/img/choose.png" width={40} height={40} alt="img" data-aos="fade-down" />
-          </div>
-          <div>
-            <h2 className="text-[16px] text-primary font-bold" data-aos="fade-down">
-              Descubrimiento y Planificación
-            </h2>
-            <p className="text-[16px] text-muted font-normal max-w-[300px]" data-aos="fade-down">
-              Analizamos tus requisitos y creamos una hoja de ruta detallada para el éxito de tu proyecto.
-            </p>
-          </div>
+      <section className="grid grid-cols-1 gap-6">
+        <div>
+          <p className="text-[16px] text-primary font-bold text-center lg:text-left special-font" data-aos="fade-down">
+            Simple y Eficiente
+          </p>
+          <h1
+            className="text-accent text-3xl md:text-5xl text-center lg:text-left font-extrabold w-full md:max-w-[500px] mt-2"
+            data-aos="fade-down"
+          >
+            Nuestro Proceso de Desarrollo en 3 Pasos
+          </h1>
         </div>
 
-        <div className="flex items-center gap-2 special-font">
-          <div>
-            <Image src="/img/make.png" width={40} height={40} alt="img" data-aos="fade-down" />
+        {steps.map((step, index) => (
+          <div key={index} className="flex items-start gap-4 special-font" data-aos="fade-up">
+            <div className="mt-1">
+              <step.icon className="w-8 h-8 text-primary" />
+            </div>
+            <div>
+              <h2 className="text-[18px] text-primary font-bold">{step.title}</h2>
+              <p className="text-[16px] text-muted font-normal mt-1">{step.description}</p>
+            </div>
           </div>
-          <div>
-            <h2 className="text-[16px] text-primary font-bold" data-aos="fade-down">
-              Desarrollo y Pruebas
-            </h2>
-            <p className="text-[16px] text-muted font-normal max-w-[300px]" data-aos="fade-down">
-              Nuestro equipo de expertos construye tu solución con un riguroso control de calidad en cada etapa.
-            </p>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2 special-font">
-          <div>
-            <Image src="/img/reach.png" width={40} height={40} alt="img" data-aos="fade-down" />
-          </div>
-          <div>
-            <h2 className="text-[16px] text-primary font-bold" data-aos="fade-down">
-              Implementación y Soporte
-            </h2>
-            <p className="text-[16px] text-muted font-normal max-w-[300px]" data-aos="fade-down">
-              Lanzamos tu proyecto y proporcionamos mantenimiento continuo para garantizar un rendimiento óptimo.
-            </p>
-          </div>
-        </div>
+        ))}
       </section>
 
       <section className="relative mt-20 lg:mt-0 special-font">
@@ -65,7 +57,7 @@ const Book = () => {
         >
           <div className="w-full h-[300px] md:h-[600px] lg:h-[1080px]">
             <Image
-              src="/img/cerettiecommerce.png"
+              src="/img/trip.jpg"
               width={1080}
               height={1080}
               alt="Panel de Proyecto"
@@ -73,28 +65,28 @@ const Book = () => {
             />
           </div>
 
-          <div className="grid gap-2 relative bg-background-light w-full">
+          <div className="grid gap-2 relative bg-background-light w-full p-4">
             <h2 className="text-accent text-[18px] font-bold">Panel de Proyecto</h2>
             <div className="flex items-center gap-2 text-[16px] text-muted">
               <p>Actualizaciones en tiempo real</p>
               <p>por Duality Domain</p>
             </div>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 mt-2">
               <div className="bg-background p-3 rounded-full">
-                <Image src="/img/leaf.png" width={10} height={10} alt="img" className="cursor-pointer" />
+                <Building2 className="w-5 h-5 text-primary" />
               </div>
               <div className="bg-background p-3 rounded-full">
-                <Image src="/img/map.png" width={10} height={10} alt="img" className="cursor-pointer" />
+                <Map className="w-5 h-5 text-primary" />
               </div>
               <div className="bg-background p-3 rounded-full">
-                <Image src="/img/send.png" width={10} height={10} alt="img" className="cursor-pointer" />
+                <Send className="w-5 h-5 text-primary" />
               </div>
             </div>
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mt-2">
               <div className="flex items-center gap-2">
-                <Image src="/img/building.png" width={15} height={15} alt="img" />
+                <Building2 className="w-5 h-5 text-primary" />
                 <p className="text-[16px] text-muted">24 proyectos activos</p>
               </div>
 
@@ -107,7 +99,7 @@ const Book = () => {
             >
               <div className="flex items-start justify-start gap-2">
                 <div>
-                  <Image src="/img/ongoing.png" width={30} height={30} alt="img" className="rounded-full" />
+                  <Rocket className="w-8 h-8 text-primary" />
                 </div>
                 <div>
                   <p className="text-[14px] text-muted">En Progreso</p>
@@ -118,7 +110,7 @@ const Book = () => {
                       <span className="text-primary">75%</span> completado
                     </p>
 
-                    <div className="h-[6px] bg-background w-full rounded-2xl">
+                    <div className="h-[6px] bg-background w-full rounded-2xl mt-1">
                       <div className="bg-primary h-[6px] rounded-2xl w-[75%]"></div>
                     </div>
                   </div>
