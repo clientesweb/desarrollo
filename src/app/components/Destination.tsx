@@ -13,7 +13,7 @@ const Destination = () => {
 
   const destination: Destination[] = [
     {
-      img: "/img/www.drjosefinapernas.com.jpg",
+      img: "/img/www-dr-josefina-pernas-com-jpg",
       location: "Desarrollo Web",
       amount: "Personalizado",
       days: "Soluciones Full-stack",
