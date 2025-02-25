@@ -1,16 +1,24 @@
-import type { Metadata } from 'next'
-import { Volkhov } from 'next/font/google'
-import './globals.css'
-import { AOSInit } from './components/AOS'
+import type React from "react"
+import type { Metadata } from "next"
+import { Poppins, Volkhov } from "next/font/google"
+import "./globals.css"
+import { AOSInit } from "./components/AOS"
 
-const raleway = Volkhov({
-  subsets: ['latin'],
-  weight: '700'
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
+})
+
+const volkhov = Volkhov({
+  subsets: ["latin"],
+  weight: "700",
+  variable: "--font-volkhov",
 })
 
 export const metadata: Metadata = {
-  title: 'Jadoo',
-  description: 'A Travel Agency Landing Page',
+  title: "Duality Domain | Code Crafters",
+  description: "Professional software development and tech solutions",
 }
 
 export default function RootLayout({
@@ -21,7 +29,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <AOSInit />
-      <body className={raleway.className}>{children}</body>
+      <body className={`${poppins.variable} ${volkhov.variable} font-sans`}>{children}</body>
     </html>
   )
 }
+
