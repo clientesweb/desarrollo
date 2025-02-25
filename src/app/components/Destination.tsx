@@ -13,23 +13,23 @@ const Destination = () => {
   const destination: Destination[] = [
     {
       img: "/img/rome.png",
-      location: "Web Development",
-      amount: "Custom",
-      days: "Full-stack Solutions",
+      location: "Desarrollo Web",
+      amount: "Personalizado",
+      days: "Soluciones Full-stack",
       sideImg: "",
     },
     {
       img: "/img/london.jpg",
-      location: "Mobile Apps",
-      amount: "Native",
-      days: "Cross-platform Options",
+      location: "Aplicaciones Móviles",
+      amount: "Nativas",
+      days: "Opciones Multiplataforma",
       sideImg: "",
     },
     {
       img: "/img/europe.png",
-      location: "Enterprise Solutions",
-      amount: "Scalable",
-      days: "End-to-end Integration",
+      location: "Soluciones Empresariales",
+      amount: "Escalables",
+      days: "Integración Completa",
       sideImg: "/img/Decore2.png",
     },
   ]
@@ -37,10 +37,10 @@ const Destination = () => {
     <main className="relative w-full py-[80px] px-[5%] grid grid-cols-1 gap-6" id="projects">
       <section className="flex flex-col items-center text-center gap-4">
         <p className="text-[18px] text-primary font-bold special-font" data-aos="fade-down">
-          Featured Work
+          TRABAJOS DESTACADOS
         </p>
         <h1 className="text-3xl md:text-5xl font-bold text-accent" data-aos="fade-down">
-          Our Projects
+          Nuestros Proyectos
         </h1>
       </section>
 
