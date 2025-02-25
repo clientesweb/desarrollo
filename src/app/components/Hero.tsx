@@ -1,8 +1,13 @@
+"use client"
+
 import Image from "next/image"
-import Link from "next/link"
 import { IoIosPlay } from "react-icons/io"
+import { useState } from "react"
+import VideoModal from "./VideoModal"
 
 const Hero = () => {
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
+
   return (
     <main className="relative w-full flex flex-col md:flex-row items-center justify-between py-[80px] md:py-[100px] px-[5%] bg bg-right-top bg-no-repeat bg-contain">
       <section className="w-full md:w-[50%] flex flex-col items-center md:items-start justify-center md:justify-start gap-3">
@@ -42,12 +47,12 @@ const Hero = () => {
           >
             Explorar Servicios
           </a>
-          <Link
-            href="/"
+          <button
+            onClick={() => setIsVideoModalOpen(true)}
             className="py-3 px-5 rounded-md text-accent text-[14px] font-bold flex items-center gap-2 hover:shadow-md hover:bg-background-light transition-colors duration-300"
           >
             <IoIosPlay className="text-2xl text-white p-[7px] rounded-full bg-primary" /> Ver Demo
-          </Link>
+          </button>
         </div>
       </section>
 
@@ -61,6 +66,8 @@ const Hero = () => {
           loading="eager"
         />
       </section>
+
+      <VideoModal isOpen={isVideoModalOpen} onClose={() => setIsVideoModalOpen(false)} />
     </main>
   )
 }
