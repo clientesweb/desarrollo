@@ -2,49 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
-
-/* *{
-  border: 2px solid red;
-} */
-
-.special-font{
-  font-family: 'Poppins', sans-serif;
+:root {
+  --background: #002147;
+  --foreground: #ffffff;
 }
 
- /*Keyframes for the dangling animation */
- @keyframes dangle {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(20px);
-    }
-  }
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
 
-  .dangling-picture {
-    animation: dangle 2s ease-in-out infinite;
-  }
+.special-font {
+  font-family: "Poppins", sans-serif;
+}
 
-  .parent:hover .first-child{
-    --tw-shadow-color: 0, 0, 0;
-    --tw-shadow: 0 25px 50px -12px rgba(var(--tw-shadow-color), 0.25);
-    -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    transition: 0.5s;
+/* Keyframes for the dangling animation */
+@keyframes dangle {
+  0%,
+  100% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(20px);
+  }
+}
 
-  .parent:hover .second-child{
-    display: block;
-    transition: 0.5s;
-  }
+.dangling-picture {
+  animation: dangle 2s ease-in-out infinite;
+}
 
-  .bg{
-    background-image: url(/img/Decore.png);
-    background-attachment: fixed;
-  }
+.parent:hover .first-child {
+  --tw-shadow-color: 0, 0, 0;
+  --tw-shadow: 0 25px 50px -12px rgba(var(--tw-shadow-color), 0.25);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition: 0.5s;
+}
 
-  .nav-transition{
-    transition: left 1s;
-  }
+.parent:hover .second-child {
+  display: block;
+  transition: 0.5s;
+}
+
+.bg {
+  background-image: linear-gradient(to bottom right, rgba(0, 33, 71, 0.95), rgba(0, 33, 71, 0.98));
+  background-attachment: fixed;
+}
+
+.nav-transition {
+  transition: left 1s;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #ff5733 0%, #ffa07a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tech-pattern {
+  background-image: radial-gradient(#00ced1 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.1;
+}
+
