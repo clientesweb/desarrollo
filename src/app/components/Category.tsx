@@ -9,61 +9,61 @@ const Category = () => {
 
   const category: Category[] = [
     {
-      img: "/img/weather.png",
+      img: "/img/desarrolloweb.png",
       header: "Desarrollo Web a Medida",
       subheader:
         "Creamos soluciones web personalizadas que se adaptan a las necesidades únicas de tu negocio, desde sitios informativos hasta plataformas complejas.",
     },
     {
-      img: "/img/flight.png",
+      img: "/img/diseñoweb.png",
       header: "Diseño Web Responsivo",
       subheader:
         "Desarrollamos sitios web con diseño adaptativo que garantizan una experiencia óptima en cualquier dispositivo y pantalla.",
     },
     {
-      img: "/img/event.png",
+      img: "/img/frontend.png",
       header: "Desarrollo Front-End & Back-End",
       subheader:
         "Implementamos tecnologías modernas para crear interfaces atractivas y funcionalidades robustas, asegurando un rendimiento rápido y una experiencia de usuario fluida.",
     },
     {
-      img: "/img/settings.png",
+      img: "/img/ecommerce.png",
       header: "E-Commerce Personalizado",
       subheader:
         "Creamos tiendas online únicas, adaptadas a tus necesidades, con integración de pagos seguros y una experiencia de compra sencilla y efectiva.",
     },
     {
-      img: "/img/leaf.png",
+      img: "/img/seo.png",
       header: "Optimización Web y SEO",
       subheader:
         "Mejoramos la velocidad de carga, rendimiento y visibilidad de tu sitio web para asegurar una excelente experiencia de usuario y un alto posicionamiento en los motores de búsqueda.",
     },
     {
-      img: "/img/map.png",
+      img: "/img/api.png",
       header: "Integración de APIs y Plataformas",
       subheader:
         "Conectamos tu sitio con plataformas y servicios externos mediante integraciones eficientes que amplían las funcionalidades de tu página.",
     },
     {
-      img: "/img/send.png",
+      img: "/img/consultoria.png",
       header: "Consultoría Digital",
       subheader:
         "Asesoramos sobre las mejores soluciones digitales para tu negocio, ayudándote a crear una estrategia sólida para alcanzar tus objetivos en línea.",
     },
     {
-      img: "/img/building.png",
+      img: "/img/mantenimiento.png",
       header: "Mantenimiento Web",
       subheader:
         "Ofrecemos soporte continuo y actualizaciones para asegurar que tu sitio web esté siempre funcionando al máximo, con mejoras y actualizaciones de seguridad.",
     },
     {
-      img: "/img/ongoing.png",
+      img: "/img/aplicación.png",
       header: "Desarrollo de Aplicaciones Web",
       subheader:
         "Creamos aplicaciones web interactivas y funcionales que mejoran la interacción con tus usuarios y optimizan procesos internos.",
     },
     {
-      img: "/img/choose.png",
+      img: "/img/ui.png",
       header: "Investigación y Mejora de UX",
       subheader:
         "Estudiamos el comportamiento de tus usuarios para crear soluciones que mejoren la navegación y la satisfacción general de los visitantes en tu sitio web.",
