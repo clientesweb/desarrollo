@@ -19,7 +19,7 @@ const Testimonials = () => {
       img: "/img/nadivaslogo.png",
       review:
         "Gracias, Duality Domain, por acompañar a Nadiva's en la creación de nuestra página web. Destacamos tu compromiso, responsabilidad y disponibilidad, siempre brindando ideas y aportes valiosos. Estamos muy conformes con el resultado. ¡Excelente trabajo!",
-      name: "Nadia"
+      name: "Nadia",
       company: "Nadivas Estética E Insumos.",
     },
     {
