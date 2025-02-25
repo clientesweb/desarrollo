@@ -96,7 +96,7 @@ const Book = () => {
             </div>
 
             <div
-              className="p-4 rounded-2xl shadow-md max-w-[500px] absolute right-[-60px] bottom-6 bg-background-light border border-primary/20"
+              className="p-4 rounded-2xl shadow-md max-w-[500px] absolute right-[-60px] bottom-6 bg-background border border-primary/20"
               data-aos="slide-right"
             >
               <div className="flex items-start justify-start gap-2">
