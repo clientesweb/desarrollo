@@ -6,13 +6,13 @@ const Book = () => {
     <main className="px-[5%] py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-6" id="about">
       <section className="grid grid-cols-1 gap-4">
         <p className="text-[16px] text-primary font-bold text-center md:text-left special-font" data-aos="fade-down">
-          Simple & Efficient
+          Simple y Eficiente
         </p>
         <h1
           className="text-accent text-3xl md:text-5xl text-center md:text-left font-extrabold w-full md:max-w-[500px]"
           data-aos="fade-down"
         >
-          Our Development Process in 3 Easy Steps
+          Nuestro Proceso de Desarrollo en 3 Pasos
         </h1>
 
         <div className="flex items-center gap-2 special-font">
@@ -21,10 +21,10 @@ const Book = () => {
           </div>
           <div>
             <h2 className="text-[16px] text-primary font-bold" data-aos="fade-down">
-              Discovery & Planning
+              Descubrimiento y Planificación
             </h2>
             <p className="text-[16px] text-muted font-normal max-w-[300px]" data-aos="fade-down">
-              We analyze your requirements and create a detailed roadmap for your project's success.
+              Analizamos tus requisitos y creamos una hoja de ruta detallada para el éxito de tu proyecto.
             </p>
           </div>
         </div>
@@ -35,10 +35,10 @@ const Book = () => {
           </div>
           <div>
             <h2 className="text-[16px] text-primary font-bold" data-aos="fade-down">
-              Development & Testing
+              Desarrollo y Pruebas
             </h2>
             <p className="text-[16px] text-muted font-normal max-w-[300px]" data-aos="fade-down">
-              Our expert team builds your solution with rigorous quality assurance at every stage.
+              Nuestro equipo de expertos construye tu solución con un riguroso control de calidad en cada etapa.
             </p>
           </div>
         </div>
@@ -49,10 +49,10 @@ const Book = () => {
           </div>
           <div>
             <h2 className="text-[16px] text-primary font-bold" data-aos="fade-down">
-              Deployment & Support
+              Implementación y Soporte
             </h2>
             <p className="text-[16px] text-muted font-normal max-w-[300px]" data-aos="fade-down">
-              We launch your project and provide ongoing maintenance to ensure optimal performance.
+              Lanzamos tu proyecto y proporcionamos mantenimiento continuo para garantizar un rendimiento óptimo.
             </p>
           </div>
         </div>
@@ -68,10 +68,10 @@ const Book = () => {
           </div>
 
           <div className="grid gap-2 relative bg-background-light w-full">
-            <h2 className="text-accent text-[18px] font-bold">Project Dashboard</h2>
+            <h2 className="text-accent text-[18px] font-bold">Panel de Proyecto</h2>
             <div className="flex items-center gap-2 text-[16px] text-muted">
-              <p>Real-time Updates</p>
-              <p>by Duality Domain</p>
+              <p>Actualizaciones en tiempo real</p>
+              <p>por Duality Domain</p>
             </div>
 
             <div className="flex items-center gap-4">
@@ -89,7 +89,7 @@ const Book = () => {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <Image src="/img/building.png" width={15} height={15} alt="img" />
-                <p className="text-[16px] text-muted">24 active projects</p>
+                <p className="text-[16px] text-muted">24 proyectos activos</p>
               </div>
 
               <FaRegHeart className="text-lg text-secondary cursor-pointer" />
@@ -104,12 +104,12 @@ const Book = () => {
                   <Image src="/img/ongoing.png" width={30} height={30} alt="img" className="rounded-full" />
                 </div>
                 <div>
-                  <p className="text-[14px] text-muted">In Progress</p>
-                  <h2 className="text-[18px] text-accent font-bold">E-Commerce Platform</h2>
+                  <p className="text-[14px] text-muted">En Progreso</p>
+                  <h2 className="text-[18px] text-accent font-bold">Plataforma E-Commerce</h2>
 
                   <div>
                     <p className="text-[14px] text-accent font-bold">
-                      <span className="text-primary">75%</span> completed
+                      <span className="text-primary">75%</span> completado
                     </p>
 
                     <div className="h-[6px] bg-background w-full rounded-2xl">
