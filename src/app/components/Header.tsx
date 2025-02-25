@@ -40,7 +40,7 @@ const Header = () => {
     >
       <Link href="/" className="w-[60px]">
         <Image
-          src="/logo-duality-domain.png"
+          src="/img/logo-duality-domain.png"
           width={60}
           height={60}
           alt="Duality Domain Logo"
