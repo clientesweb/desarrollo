@@ -18,23 +18,23 @@ const Testimonials = () => {
     {
       img: "/img/user1.png",
       review:
-        "“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”",
-      name: "Mike taylor",
-      company: "Lahore, Pakistan",
+        "Duality Domain transformó nuestro negocio con sus soluciones innovadoras. La experiencia de su equipo y su dedicación superaron nuestras expectativas en cada etapa.",
+      name: "Miguel Torres",
+      company: "CTO, TechVision Inc.",
     },
     {
       img: "/img/user2.png",
       review:
-        "“This service is a game-changer! I was skeptical at first, but after trying it, I'm hooked. The results were instant, and I couldn't be happier.”",
-      name: "Chris Thomas",
-      company: "CEO of Red Button",
+        "Trabajar con Duality Domain fue un cambio radical para nuestra empresa. Su conocimiento técnico y atención al detalle entregaron resultados excepcionales.",
+      name: "Carlos Tomás",
+      company: "CEO de Red Button",
     },
     {
       img: "/img/user3.png",
       review:
-        "“The customer support is also top-notch. They were quick to respond and helped me with any questions I had.”",
-      name: "John Smith",
-      company: "CEO of Energize Your Life Co",
+        "El soporte al cliente es sobresaliente. Fueron receptivos, profesionales y nos ayudaron a navegar por desafíos técnicos complejos con facilidad.",
+      name: "Juan Sánchez",
+      company: "CEO de Energize Your Life Co",
     },
   ]
 
@@ -68,29 +68,29 @@ const Testimonials = () => {
     <main className="px-[5%] py-[100px] grid grid-cols-1 md:grid-cols-2 gap-6">
       <section className="grid gap-4">
         <p
-          className="text-[18px] text-litegrey font-semibold special-font text-center md:text-left"
+          className="text-[18px] text-primary font-semibold special-font text-center md:text-left"
           data-aos="fade-down"
         >
-          Testimonials
+          Testimonios
         </p>
         <h1
-          className="text-3xl md:text-5xl font-extrabold w-full md:max-w-[70%] text-center md:text-left"
+          className="text-3xl md:text-5xl font-extrabold w-full md:max-w-[70%] text-center md:text-left text-accent"
           data-aos="fade-down"
         >
-          What People Say About Us.
+          Lo Que Dicen Nuestros Clientes.
         </h1>
 
         <div className="flex items-center gap-2 justify-center md:justify-start" data-aos="slide-right">
           <GoDotFill
-            className={`text-2xl text-litedark ${currentIndex === 0 ? "text-litedark" : "text-litegrey"} cursor-pointer`}
+            className={`text-2xl ${currentIndex === 0 ? "text-primary" : "text-muted"} cursor-pointer`}
             onClick={() => handleDotClick(0)}
           />
           <GoDotFill
-            className={`text-2xl text-litedark ${currentIndex === 1 ? "text-litedark" : "text-litegrey"} cursor-pointer`}
+            className={`text-2xl ${currentIndex === 1 ? "text-primary" : "text-muted"} cursor-pointer`}
             onClick={() => handleDotClick(1)}
           />
           <GoDotFill
-            className={`text-2xl text-litedark ${currentIndex === 2 ? "text-litedark" : "text-litegrey"} cursor-pointer`}
+            className={`text-2xl ${currentIndex === 2 ? "text-primary" : "text-muted"} cursor-pointer`}
             onClick={() => handleDotClick(2)}
           />
         </div>
@@ -99,43 +99,43 @@ const Testimonials = () => {
       <section className="flex items-center justify-center gap-4 mt-10 md:mt-0 special-font">
         <div className="relative">
           <div
-            className="p-4 rounded-xl shadow-lg bg-white w-[85%] md:w-[70%] grid gap-3 relative z-10 "
+            className="p-4 rounded-xl shadow-lg bg-primary/10 w-[85%] md:w-[70%] grid gap-3 relative z-10 border border-primary/20"
             data-aos="fade-down"
           >
             <Image
-              src={testimonialsData[currentIndex].img}
+              src={testimonialsData[currentIndex].img || "/placeholder.svg"}
               width={50}
               height={50}
               alt="img"
               className="absolute top-[-30px] left-[100px] md:left-[-20px]"
             />
-            <p className="text-[13px] md:text-[15px] text-litegrey">{testimonialsData[currentIndex].review}</p>
+            <p className="text-[13px] md:text-[15px] text-muted">{testimonialsData[currentIndex].review}</p>
 
-            <h1 className="text-[16px] md:text-[18px] text-litegrey font-semibold">
+            <h1 className="text-[16px] md:text-[18px] text-primary font-semibold">
               {testimonialsData[currentIndex].name}
             </h1>
-            <p className="text-[12px] md:text-[14px] text-litegrey">{testimonialsData[currentIndex].company}</p>
+            <p className="text-[12px] md:text-[14px] text-muted">{testimonialsData[currentIndex].company}</p>
           </div>
 
           <div
-            className="p-4 rounded-xl shadow-sm border-[#F7F7F7] border bg-white w-[85%] md:w-[70%] grid gap-3 absolute left-[50px] top-[70px]"
+            className="p-4 rounded-xl shadow-sm border border-primary/10 bg-primary/5 w-[85%] md:w-[70%] grid gap-3 absolute left-[50px] top-[70px]"
             data-aos="fade-down"
           >
             <Image
-              src={testimonialsData[(currentIndex + 1) % testimonialsData.length].img}
+              src={testimonialsData[(currentIndex + 1) % testimonialsData.length].img || "/placeholder.svg"}
               width={50}
               height={50}
               alt="img"
               className="absolute top-[-30px] left-[100px] md:left-[-20px]"
             />
-            <p className="text-[13px] md:text-[15px] text-litegrey">
+            <p className="text-[13px] md:text-[15px] text-muted">
               {testimonialsData[(currentIndex + 1) % testimonialsData.length].review}
             </p>
 
-            <h1 className="text-[16px] md:text-[18px] text-litegrey font-semibold">
+            <h1 className="text-[16px] md:text-[18px] text-primary font-semibold">
               {testimonialsData[(currentIndex + 1) % testimonialsData.length].name}
             </h1>
-            <p className="text-[12px] md:text-[14px] text-litegrey">
+            <p className="text-[12px] md:text-[14px] text-muted">
               {testimonialsData[(currentIndex + 1) % testimonialsData.length].company}
             </p>
           </div>
@@ -143,13 +143,13 @@ const Testimonials = () => {
 
         <div className="flex flex-col gap-4" data-aos="slide-right">
           <IoIosArrowUp
-            className={`text-2xl ${currentIndex === 0 ? "text-litegrey" : "text-litedark"} cursor-pointer`}
+            className={`text-2xl ${currentIndex === 0 ? "text-muted" : "text-primary"} cursor-pointer`}
             onClick={handleArrowUpClick}
           />
 
           <IoIosArrowDown
             className={`text-2xl ${
-              currentIndex === testimonialsData.length - 1 ? "text-litegrey" : "text-litedark"
+              currentIndex === testimonialsData.length - 1 ? "text-muted" : "text-primary"
             } cursor-pointer`}
             onClick={handleArrowDownClick}
           />
