@@ -40,7 +40,7 @@ const Header = () => {
     >
       <Link href="/" className="w-[60px]">
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-duality-domain-r6m55SQWTLflCkvPu7WmEi9dgTru6x.png"
+          src="/logo-duality-domain.png"
           width={60}
           height={60}
           alt="Duality Domain Logo"
