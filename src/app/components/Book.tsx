@@ -57,7 +57,7 @@ const Book = () => {
         >
           <div className="w-full h-[300px] md:h-[600px] lg:h-[1080px]">
             <Image
-              src="/img/trip.jpg"
+              src="/img/cerettiecommerce.png"
               width={1080}
               height={1080}
               alt="Panel de Proyecto"
@@ -69,7 +69,7 @@ const Book = () => {
             <h2 className="text-accent text-[18px] font-bold">Panel de Proyecto</h2>
             <div className="flex items-center gap-2 text-[16px] text-muted">
               <p>Actualizaciones en tiempo real</p>
-              <p>por Duality Domain</p>
+              <p className="text-[#00BEC1]">por Duality Domain</p>
             </div>
 
             <div className="flex items-center gap-4 mt-2">
@@ -94,7 +94,7 @@ const Book = () => {
             </div>
 
             <div
-              className="p-4 rounded-2xl shadow-md max-w-[500px] absolute right-[-20px] bottom-6 bg-background border border-primary/20"
+              className="p-4 rounded-2xl shadow-md max-w-[500px] absolute right-[-20px] top-[-60px] bg-background border border-primary/20"
               data-aos="slide-right"
             >
               <div className="flex items-start justify-start gap-2">
