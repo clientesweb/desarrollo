@@ -10,24 +10,63 @@ const Category = () => {
   const category: Category[] = [
     {
       img: "/img/weather.png",
-      header: "Analítica Avanzada",
+      header: "Desarrollo Web a Medida",
       subheader:
-        "Información basada en datos para ayudarte a tomar decisiones informadas y optimizar tus procesos de negocio",
+        "Creamos soluciones web personalizadas que se adaptan a las necesidades únicas de tu negocio, desde sitios informativos hasta plataformas complejas.",
     },
     {
       img: "/img/flight.png",
-      header: "Desarrollo Personalizado",
-      subheader: "Soluciones de software a medida diseñadas para abordar los desafíos únicos de tu negocio",
+      header: "Diseño Web Responsivo",
+      subheader:
+        "Desarrollamos sitios web con diseño adaptativo que garantizan una experiencia óptima en cualquier dispositivo y pantalla.",
     },
     {
       img: "/img/event.png",
-      header: "Soluciones en la Nube",
-      subheader: "Infraestructura en la nube escalable y segura para potenciar tus aplicaciones y servicios",
+      header: "Desarrollo Front-End & Back-End",
+      subheader:
+        "Implementamos tecnologías modernas para crear interfaces atractivas y funcionalidades robustas, asegurando un rendimiento rápido y una experiencia de usuario fluida.",
     },
     {
       img: "/img/settings.png",
-      header: "Integración de IA",
-      subheader: "Soluciones de inteligencia artificial de vanguardia para automatizar y mejorar tus operaciones",
+      header: "E-Commerce Personalizado",
+      subheader:
+        "Creamos tiendas online únicas, adaptadas a tus necesidades, con integración de pagos seguros y una experiencia de compra sencilla y efectiva.",
+    },
+    {
+      img: "/img/leaf.png",
+      header: "Optimización Web y SEO",
+      subheader:
+        "Mejoramos la velocidad de carga, rendimiento y visibilidad de tu sitio web para asegurar una excelente experiencia de usuario y un alto posicionamiento en los motores de búsqueda.",
+    },
+    {
+      img: "/img/map.png",
+      header: "Integración de APIs y Plataformas",
+      subheader:
+        "Conectamos tu sitio con plataformas y servicios externos mediante integraciones eficientes que amplían las funcionalidades de tu página.",
+    },
+    {
+      img: "/img/send.png",
+      header: "Consultoría Digital",
+      subheader:
+        "Asesoramos sobre las mejores soluciones digitales para tu negocio, ayudándote a crear una estrategia sólida para alcanzar tus objetivos en línea.",
+    },
+    {
+      img: "/img/building.png",
+      header: "Mantenimiento Web",
+      subheader:
+        "Ofrecemos soporte continuo y actualizaciones para asegurar que tu sitio web esté siempre funcionando al máximo, con mejoras y actualizaciones de seguridad.",
+    },
+    {
+      img: "/img/ongoing.png",
+      header: "Desarrollo de Aplicaciones Web",
+      subheader:
+        "Creamos aplicaciones web interactivas y funcionales que mejoran la interacción con tus usuarios y optimizan procesos internos.",
+    },
+    {
+      img: "/img/choose.png",
+      header: "Investigación y Mejora de UX",
+      subheader:
+        "Estudiamos el comportamiento de tus usuarios para crear soluciones que mejoren la navegación y la satisfacción general de los visitantes en tu sitio web.",
     },
   ]
   return (
@@ -37,34 +76,34 @@ const Category = () => {
           SERVICIOS
         </p>
         <h1 className="text-3xl md:text-5xl font-bold text-accent" data-aos="fade-down">
-          Ofrecemos Soluciones Expertas
+          Servicios Ofrecidos por Duality Domain
         </h1>
       </section>
 
-      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 place-items-center items-stretch gap-6 lg:gap-10 special-font">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center items-stretch gap-6 lg:gap-8 special-font mt-8">
         {category.map((categories, index) => (
           <div className="relative parent" key={index}>
-            <div className="first-child relative flex flex-col items-center p-10 sm:p-4 xl:p-10 rounded-3xl gap-4 z-10 bg-background-light h-full border border-primary/20">
+            <div className="first-child relative flex flex-col items-center p-6 sm:p-4 xl:p-6 rounded-3xl gap-4 z-10 bg-background-light h-full border border-primary/20">
               <div>
                 <Image
                   src={categories.img || "/placeholder.svg"}
-                  width={100}
-                  height={100}
+                  width={60}
+                  height={60}
                   alt="img"
                   data-aos="fade-down"
                 />
               </div>
 
-              <div className="flex flex-col items-center text-center gap-4">
-                <h2 className="text-[20px] text-primary font-bold" data-aos="fade-down">
+              <div className="flex flex-col items-center text-center gap-3">
+                <h2 className="text-[18px] text-primary font-bold" data-aos="fade-down">
                   {categories.header}
                 </h2>
-                <p className="text-[16px] text-muted" data-aos="fade-down">
+                <p className="text-[14px] text-muted" data-aos="fade-down">
                   {categories.subheader}
                 </p>
               </div>
             </div>
-            <div className="second-child hidden p-6 lg:p-8 bg-secondary rounded-tl-3xl rounded-br-lg absolute bottom-[-18px] lg:bottom-[-25px] left-[-15px] lg:left-[-20px]"></div>
+            <div className="second-child hidden p-6 lg:p-6 bg-secondary rounded-tl-3xl rounded-br-lg absolute bottom-[-18px] lg:bottom-[-25px] left-[-15px] lg:left-[-20px]"></div>
           </div>
         ))}
       </section>
