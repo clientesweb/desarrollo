@@ -16,25 +16,25 @@ const Testimonials = () => {
 
   const testimonialsData: TestimonialData[] = [
     {
-      img: "/img/user1.png",
+      img: "/img/nadivaslogo.png",
       review:
-        "Duality Domain transformó nuestro negocio con sus soluciones innovadoras. La experiencia de su equipo y su dedicación superaron nuestras expectativas en cada etapa.",
-      name: "Miguel Torres",
-      company: "CTO, TechVision Inc.",
+        "Gracias, Duality Domain, por acompañar a Nadiva's en la creación de nuestra página web. Destacamos tu compromiso, responsabilidad y disponibilidad, siempre brindando ideas y aportes valiosos. Estamos muy conformes con el resultado. ¡Excelente trabajo!",
+      name: "Nadia"
+      company: "Nadivas Estética E Insumos.",
     },
     {
-      img: "/img/user2.png",
+      img: "/img/button.png",
       review:
-        "Trabajar con Duality Domain fue un cambio radical para nuestra empresa. Su conocimiento técnico y atención al detalle entregaron resultados excepcionales.",
-      name: "Carlos Tomás",
-      company: "CEO de Red Button",
+        "Gracias, Duality Domain, por llevar nuestra presencia digital al siguiente nivel. Valoramos tu compromiso, profesionalismo y la dedicación en cada detalle. La web refleja perfectamente nuestra visión y necesidades. ¡Un trabajo excepcional!",
+      name: "Tomás",
+      company: "Button Tech",
     },
     {
-      img: "/img/user3.png",
+      img: "/img/jose.png",
       review:
-        "El soporte al cliente es sobresaliente. Fueron receptivos, profesionales y nos ayudaron a navegar por desafíos técnicos complejos con facilidad.",
-      name: "Juan Sánchez",
-      company: "CEO de Energize Your Life Co",
+        "Gracias, Duality Domain, por crear una página web que transmite profesionalismo y confianza. Destaco tu compromiso, atención al detalle y la capacidad de captar exactamente lo que necesitaba. Un trabajo impecable que superó mis expectativas.",
+      name: "Dra Josefina Pernas",
+      company: "Psiquiatra",
     },
   ]
 
