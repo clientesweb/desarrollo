@@ -13,35 +13,35 @@ const Destination = () => {
 
   const destination: Destination[] = [
     {
-      img: "/img/janneth-aguirre-website-dualitydomain.jpg",
+      img: "/img/project1.jpg",
       location: "Desarrollo Web",
       amount: "Personalizado",
-      days: "Progressive Web App (PWA)",
+      days: "Soluciones Full-stack",
       sideImg: "",
     },
     {
-      img: "/img/london.jpg",
+      img: "/img/project2.jpg",
       location: "Aplicaciones Móviles",
       amount: "Nativas",
       days: "Opciones Multiplataforma",
       sideImg: "",
     },
     {
-      img: "/img/europe.png",
+      img: "/img/project3.jpg",
       location: "Soluciones Empresariales",
       amount: "Escalables",
       days: "Integración Completa",
       sideImg: "/img/Decore2.png",
     },
     {
-      img: "/img/rome.png",
+      img: "/img/project4.jpg",
       location: "E-Commerce",
       amount: "Optimizado",
       days: "Experiencia de Compra Fluida",
       sideImg: "",
     },
     {
-      img: "/img/london.jpg",
+      img: "/img/project5.jpg",
       location: "Plataforma Educativa",
       amount: "Interactiva",
       days: "Aprendizaje Personalizado",
@@ -63,14 +63,14 @@ const Destination = () => {
         <div className="flex overflow-x-auto pb-8 gap-6 snap-x snap-mandatory hide-scrollbar" data-aos="fade-up">
           {destination.map((destinations, index) => (
             <div className="relative flex-shrink-0 w-[280px] md:w-[320px] snap-start" key={index}>
-              <div className="relative z-10 h-full flex flex-col rounded-2xl shadow-sm">
-                <div className="h-[220px]">
+              <div className="relative z-10 h-full flex flex-col rounded-2xl shadow-sm overflow-hidden">
+                <div className="h-[320px] w-[320px]">
                   <Image
                     src={destinations.img || "/placeholder.svg"}
-                    width={320}
-                    height={220}
-                    alt="img"
-                    className="w-full h-full rounded-tl-2xl rounded-tr-2xl object-cover"
+                    width={1080}
+                    height={1080}
+                    alt="Proyecto"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="grid grid-cols-1 gap-2 p-4 bg-background-light flex-grow">
@@ -88,7 +88,7 @@ const Destination = () => {
                   src={destinations.sideImg || "/placeholder.svg"}
                   width={80}
                   height={80}
-                  alt="img"
+                  alt="Decoración"
                   className="absolute right-[-15px] bottom-[90px]"
                 />
               )}
