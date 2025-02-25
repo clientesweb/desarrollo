@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { TiLocationArrow } from "react-icons/ti"
+import Link from "next/link"
 
 const Destination = () => {
   interface Destination {
@@ -32,6 +33,20 @@ const Destination = () => {
       days: "Integración Completa",
       sideImg: "/img/Decore2.png",
     },
+    {
+      img: "/img/rome.png",
+      location: "E-Commerce",
+      amount: "Optimizado",
+      days: "Experiencia de Compra Fluida",
+      sideImg: "",
+    },
+    {
+      img: "/img/london.jpg",
+      location: "Plataforma Educativa",
+      amount: "Interactiva",
+      days: "Aprendizaje Personalizado",
+      sideImg: "",
+    },
   ]
   return (
     <main className="relative w-full py-[80px] px-[5%] grid grid-cols-1 gap-6" id="projects">
@@ -44,41 +59,52 @@ const Destination = () => {
         </h1>
       </section>
 
-      <section className="grid grid-cols-1 sm:grid-cols-3 items-center gap-4 lg:gap-8 xl:gap-16 special-font">
-        {destination.map((destinations, index) => (
-          <div className="relative flex flex-col rounded-2xl shadow-sm" key={index}>
-            <div className="relative z-10" data-aos="fade-down">
-              <div className="h-[350px]">
-                <Image
-                  src={destinations.img || "/placeholder.svg"}
-                  width={300}
-                  height={300}
-                  alt="img"
-                  className="w-full h-full rounded-tl-2xl rounded-tr-2xl"
-                />
-              </div>
-              <div className="grid grid-cols-1 gap-2 p-4 bg-background-light">
-                <div className="text-[18px] text-accent font-medium flex items-center justify-between gap-4">
-                  <p>{destinations.location}</p> <p className="text-primary">{destinations.amount}</p>
+      <div className="relative w-full mt-8">
+        <div className="flex overflow-x-auto pb-8 gap-6 snap-x snap-mandatory hide-scrollbar" data-aos="fade-up">
+          {destination.map((destinations, index) => (
+            <div className="relative flex-shrink-0 w-[280px] md:w-[320px] snap-start" key={index}>
+              <div className="relative z-10 h-full flex flex-col rounded-2xl shadow-sm">
+                <div className="h-[220px]">
+                  <Image
+                    src={destinations.img || "/placeholder.svg"}
+                    width={320}
+                    height={220}
+                    alt="img"
+                    className="w-full h-full rounded-tl-2xl rounded-tr-2xl object-cover"
+                  />
                 </div>
-                <div className="text-[16px] text-muted font-medium flex items-center gap-1">
-                  <TiLocationArrow className="text-secondary text-xl" /> <p>{destinations.days}</p>
+                <div className="grid grid-cols-1 gap-2 p-4 bg-background-light flex-grow">
+                  <div className="text-[18px] text-accent font-medium flex items-center justify-between gap-4">
+                    <p>{destinations.location}</p> <p className="text-primary">{destinations.amount}</p>
+                  </div>
+                  <div className="text-[16px] text-muted font-medium flex items-center gap-1">
+                    <TiLocationArrow className="text-secondary text-xl" /> <p>{destinations.days}</p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {destinations.sideImg && (
-              <Image
-                src={destinations.sideImg || "/placeholder.svg"}
-                width={80}
-                height={80}
-                alt="img"
-                className="absolute right-[-15px] sm:right-[-30px] lg:right-[-50px] bottom-[90px]"
-              />
-            )}
-          </div>
-        ))}
-      </section>
+              {destinations.sideImg && (
+                <Image
+                  src={destinations.sideImg || "/placeholder.svg"}
+                  width={80}
+                  height={80}
+                  alt="img"
+                  className="absolute right-[-15px] bottom-[90px]"
+                />
+              )}
+            </div>
+          ))}
+        </div>
+
+        <div className="flex justify-center mt-8">
+          <Link
+            href="#"
+            className="px-8 py-3 bg-secondary text-white rounded-md hover:bg-secondary-dark transition-colors duration-300 font-medium special-font"
+          >
+            Ver Todos los Proyectos
+          </Link>
+        </div>
+      </div>
     </main>
   )
 }
