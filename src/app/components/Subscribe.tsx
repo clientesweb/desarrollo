@@ -9,20 +9,20 @@ const Subscribe = () => {
           className="text-xl md:text-3xl font-bold text-accent w-full md:w-[75%] text-center relative z-10"
           data-aos="fade-down"
         >
-          Subscribe to get updates on our latest projects and tech insights
+          Suscríbete para recibir actualizaciones sobre nuestros proyectos y conocimientos tecnológicos
         </p>
 
         <div className="flex items-center justify-center gap-2 w-full relative z-10" data-aos="fade-down">
           <label htmlFor="" className="relative w-full md:w-[50%]">
             <input
               type="text"
-              placeholder="Your email"
+              placeholder="Tu correo electrónico"
               className="relative border-none outline-none bg-background/50 text-accent rounded-lg py-3 pl-12 pr-4 w-full text-[15px] font-normal"
             />
             <IoMailOutline className="absolute text-primary text-3xl top-2 left-2" />
           </label>
           <button className="bg-secondary text-[15px] py-3 px-5 text-white font-medium rounded-lg hover:bg-secondary-dark transition-colors duration-300">
-            Subscribe
+            Suscribirse
           </button>
         </div>
 
