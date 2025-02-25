@@ -17,8 +17,8 @@ const volkhov = Volkhov({
 })
 
 export const metadata: Metadata = {
-  title: "Duality Domain | Code Crafters",
-  description: "Professional software development and tech solutions",
+  title: "Duality Domain | Creadores de Código",
+  description: "Desarrollo profesional de software y soluciones tecnológicas",
 }
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <AOSInit />
       <body className={`${poppins.variable} ${volkhov.variable} font-sans`}>{children}</body>
     </html>
