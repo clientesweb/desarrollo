@@ -108,7 +108,7 @@
 }
 
 .bg {
-  background-image: linear-gradient(to bottom right, rgba(0, 33, 71, 0.95), rgba(0, 33, 71, 0.98));
+  background-image: url(/img/Decore.png);
   background-attachment: fixed;
 }
 
