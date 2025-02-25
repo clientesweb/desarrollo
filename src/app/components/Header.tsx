@@ -4,23 +4,23 @@ import Link from "next/link"
 import Image from "next/image"
 import { IoMenu } from "react-icons/io5"
 import { IoClose } from "react-icons/io5"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 
 const Header = () => {
   const [scrollY, setScrollY] = useState(0)
   const [headerBackground, setHeaderBackground] = useState("")
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     setScrollY(window.scrollY)
-  }
+  }, [])
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
     return () => {
       window.removeEventListener("scroll", handleScroll)
     }
-  }, [])
+  }, [handleScroll])
 
   useEffect(() => {
     if (scrollY > 0) {
@@ -38,10 +38,10 @@ const Header = () => {
     <nav
       className={`py-5 px-[5%] top-0 w-full fixed flex items-center justify-between z-20 ${headerBackground} transition-all duration-300 special-font`}
     >
-      <Link href="/" className="w-[200px]">
+      <Link href="/" className="w-[80px]">
         <Image
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-duality-domain-r6m55SQWTLflCkvPu7WmEi9dgTru6x.png"
-          width={200}
+          width={80}
           height={80}
           alt="Duality Domain Logo"
           className="w-full"
@@ -54,16 +54,16 @@ const Header = () => {
       >
         <div className="flex flex-col md:flex-row items-start md:items-center justify-start md:justify-between gap-4 lg:gap-8">
           <a href="#services" className="hover:text-primary transition-colors duration-200">
-            Services
+            Servicios
           </a>
           <a href="#projects" className="hover:text-primary transition-colors duration-200">
-            Projects
+            Proyectos
           </a>
           <a href="#about" className="hover:text-primary transition-colors duration-200">
-            About
+            Nosotros
           </a>
           <a href="#contact" className="hover:text-primary transition-colors duration-200">
-            Contact
+            Contacto
           </a>
         </div>
 
@@ -72,7 +72,7 @@ const Header = () => {
             href="#"
             className="px-6 py-2 bg-primary text-background hover:bg-primary-dark transition-colors duration-200 rounded-md"
           >
-            Get Started
+            Comenzar
           </a>
         </div>
       </section>
