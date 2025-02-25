@@ -55,7 +55,7 @@ const Destination = () => {
           TRABAJOS DESTACADOS
         </p>
         <h1 className="text-3xl md:text-5xl font-bold text-accent" data-aos="fade-down">
-          Nuestros Proyectos
+          Proyectos Recientes 
         </h1>
       </section>
 
@@ -98,10 +98,10 @@ const Destination = () => {
 
         <div className="flex justify-center mt-8">
           <Link
-            href="#"
+            href="https://www.instagram.com/dualitydomain?igsh=MXFjZXJsbmZtaWphcw=="
             className="px-8 py-3 bg-secondary text-white rounded-md hover:bg-secondary-dark transition-colors duration-300 font-medium special-font"
           >
-            Ver Todos los Proyectos
+            Ver Más Proyectos
           </Link>
         </div>
       </div>
