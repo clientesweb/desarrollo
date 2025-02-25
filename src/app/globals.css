@@ -2,49 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
-
-/* *{
-  border: 2px solid red;
-} */
-
-.special-font{
-  font-family: 'Poppins', sans-serif;
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 35 100% 50%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 35 100% 50%;
+    --radius: 0.5rem;
+  }
 }
 
- /*Keyframes for the dangling animation */
- @keyframes dangle {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(20px);
-    }
-  }
+.special-font {
+  font-family: "Poppins", sans-serif;
+}
 
-  .dangling-picture {
-    animation: dangle 2s ease-in-out infinite;
+/* Keyframes for the dangling animation */
+@keyframes dangle {
+  0%,
+  100% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(20px);
+  }
+}
 
-  .parent:hover .first-child{
-    --tw-shadow-color: 0, 0, 0;
-    --tw-shadow: 0 25px 50px -12px rgba(var(--tw-shadow-color), 0.25);
-    -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    transition: 0.5s;
-  }
+.dangling-picture {
+  animation: dangle 2s ease-in-out infinite;
+}
 
-  .parent:hover .second-child{
-    display: block;
-    transition: 0.5s;
-  }
+.parent:hover .first-child {
+  --tw-shadow-color: 0, 0, 0;
+  --tw-shadow: 0 25px 50px -12px rgba(var(--tw-shadow-color), 0.25);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition: 0.5s;
+}
 
-  .bg{
-    background-image: url(/img/Decore.png);
-    background-attachment: fixed;
-  }
+.parent:hover .second-child {
+  display: block;
+  transition: 0.5s;
+}
 
-  .nav-transition{
-    transition: left 1s;
-  }
+.bg {
+  background-image: url(/img/Decore.png);
+  background-attachment: fixed;
+}
+
+.nav-transition {
+  transition: left 1s;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
