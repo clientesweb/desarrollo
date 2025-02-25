@@ -13,10 +13,10 @@ const Destination = () => {
 
   const destination: Destination[] = [
     {
-      img: "/img/rome.png",
+      img: "/img/janneth-aguirre-website-dualitydomain.jpg",
       location: "Desarrollo Web",
       amount: "Personalizado",
-      days: "Soluciones Full-stack",
+      days: "Progressive Web App (PWA)",
       sideImg: "",
     },
     {
