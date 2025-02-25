@@ -85,7 +85,7 @@ const Category = () => {
     <main className="relative w-full py-[100px] px-[5%] grid grid-cols-1 gap-4" id="services">
       <section className="flex flex-col items-center text-center gap-4">
         <p className="text-[18px] text-primary font-bold special-font" data-aos="fade-down">
-          SERVICIOS
+          ¿PORQUE ELEGIRNOS?
         </p>
         <h1 className="text-3xl md:text-5xl font-bold text-accent" data-aos="fade-down">
           Servicios Ofrecidos por Duality Domain
