@@ -10,33 +10,34 @@ const Category = () => {
   const category: Category[] = [
     {
       img: "/img/weather.png",
-      header: "Advanced Analytics",
-      subheader: "Data-driven insights to help you make informed decisions and optimize your business processes",
+      header: "Analítica Avanzada",
+      subheader:
+        "Información basada en datos para ayudarte a tomar decisiones informadas y optimizar tus procesos de negocio",
     },
     {
       img: "/img/flight.png",
-      header: "Custom Development",
-      subheader: "Tailored software solutions designed to address your unique business challenges",
+      header: "Desarrollo Personalizado",
+      subheader: "Soluciones de software a medida diseñadas para abordar los desafíos únicos de tu negocio",
     },
     {
       img: "/img/event.png",
-      header: "Cloud Solutions",
-      subheader: "Scalable and secure cloud infrastructure to power your applications and services",
+      header: "Soluciones en la Nube",
+      subheader: "Infraestructura en la nube escalable y segura para potenciar tus aplicaciones y servicios",
     },
     {
       img: "/img/settings.png",
-      header: "AI Integration",
-      subheader: "Cutting-edge artificial intelligence solutions to automate and enhance your operations",
+      header: "Integración de IA",
+      subheader: "Soluciones de inteligencia artificial de vanguardia para automatizar y mejorar tus operaciones",
     },
   ]
   return (
     <main className="relative w-full py-[100px] px-[5%] grid grid-cols-1 gap-4" id="services">
       <section className="flex flex-col items-center text-center gap-4">
         <p className="text-[18px] text-primary font-bold special-font" data-aos="fade-down">
-          SERVICES
+          SERVICIOS
         </p>
         <h1 className="text-3xl md:text-5xl font-bold text-accent" data-aos="fade-down">
-          We Offer Expert Solutions
+          Ofrecemos Soluciones Expertas
         </h1>
       </section>
 
